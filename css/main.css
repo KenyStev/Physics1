@@ -1,0 +1,27 @@
+h1{
+	font-size: 50px;
+	color: #4f4f4f;
+	text-align: center;
+}
+
+p{
+	font-size: 30px;
+}
+
+#Fisica{
+	width: 1024px;
+}
+
+#integrantes{
+	font-size: 25px;
+	text-align: right;
+	border: 2px dashed #aaa;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.slide{
+	background-color: #bdbdbd;
+	border: 0px;
+}
