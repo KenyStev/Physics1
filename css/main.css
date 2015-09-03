@@ -1,3 +1,11 @@
+*{
+color: white;
+}
+
+body{
+	background: #16a085;
+}
+
 h1{
 	font-size: 50px;
 	color: #4f4f4f;
@@ -12,7 +20,26 @@ p{
 	width: 1024px;
 }
 
+#Fisica h1{
+	background-color: #1abc9c;
+}
+
+.left{
+	width: 50%;
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.right{
+	width: 50%;
+	position: relative;
+	display: inline;
+	float: right;
+}
+
 #integrantes{
+	background-color: #1abc9c;
 	font-size: 25px;
 	text-align: right;
 	border: 2px dashed #aaa;
@@ -22,6 +49,40 @@ p{
 }
 
 .slide{
-	background-color: #bdbdbd;
+	background-color: #1abc9c;/*#bdbdbd;*/
 	border: 0px;
+}
+
+.tutorial {
+	border-radius: 10px;
+	border: 2px dashed white;
+	width: 950px;
+	height: 750px;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+
+.tutorial .container .hide{
+	display: none;
+	margin: auto;
+}
+
+.tutorial.present .container .hide{
+	display: block;
+	margin: auto;
+}
+
+.parrafo{
+	text-align: center;
+}
+
+.parrafo p{
+	font-size: 20px;
+}
+
+#Fgrama{
+	clear: both;
 }
