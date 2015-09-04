@@ -12,6 +12,11 @@ h1{
 	text-align: center;
 }
 
+h4{
+	font-size: 20px;
+	text-align: center;
+}
+
 p{
 	font-size: 30px;
 }
@@ -60,9 +65,26 @@ p{
 	height: 750px;
 }
 
+.center{
+	margin: auto;
+}
+
+.clear{
+	clear: both;
+}
+
+#clip{
+	position: absolute;
+	right: 50px;
+}
+
 img{
 	display: block;
 	margin: auto;
+}
+
+.inline{
+	display: inline-block;
 }
 
 .tutorial .container .hide{

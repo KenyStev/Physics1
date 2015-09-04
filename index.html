@@ -179,13 +179,13 @@
     
     <div class="step" data-x="1000" data-y="0">
         <div class="container">
-            <video src="video/#" width="850" preload controls/>
+            <video src="video/Generar Trayectoria.mp4" width="850" preload controls/>
         </div>
     </div>
 
     <div class="step" data-x="1000" data-y="400" data-rotate-x="90">
         <div class="container">
-            <video src="video/MAP.mp4" width="850" preload controls/>
+            <video src="video/map.mpeg" width="850" preload controls/>
         </div>
     </div>
 
@@ -193,39 +193,80 @@
         <div class="container">
             <h1>Interfaz de usuario</h1>
             <div class="parrafo">
-                <p>hay seguimiento a una partícula y los paneles de la interfaz están desplegados para mostrar los tipos de vista disponibles en la aplicación. La vista principal muestra imágenes y videos, incluyendo superposición de elementos tales como posiciones y trayectorias.</p>
+            <h4>ABRIENDO UN NUEVO ARCHIVO</h4>
+                <p>Al abrir un nuevo archivo, tenemos la opción de crear un archivo de tracker a partir de un video nuevo o continuar trabajando en un archivo de tracker existente.
+Para ello, nos vamos a Archivo > Open File. Seleccionamos el video o el archivo de tracker para cargarlo en el programa.
+Archivos de video Soportados: Cualquier tipo que pueda ser abierto con QuickTime.</p>
             </div>
-            <img src="image/UI.png" width="450">
-            <div class="parrafo">
-                <div class="left">
-                    <p>La barra de menús permite acceder a la mayoría de los comandos y la configuración del programa. Algunos elementos del menú´ incluyen iconos que muestran los botones de barra de herramientas, estos realizan las mismas acciones.</p>
-                </div>
-                <div class="right">
-                    <p>La barra de herramientas se muestra directamente debajo de la barra de menús, que ofrece un acceso rápido a los controles de uso frecuente, herramientas, ajustes de pista y campos de datos.
-El control de video controla la reproducción y ajustes del clip de video.</p>
-                </div>
+            <div class="left">
+                <img src="image/UI.jpg" width="550">
+            </div>
+            <div id="clip">
+                <img src="image/Clip.jpg" width="200">
+            </div>
+            <div class="parrafo clear">
+                <P>Como estamos trabajando con videos, es posible que solo querramos analizar cierta sección del video, para ello, seleccionaremos los frames que analizaremos en el programa.
+Para seleccionar los frames, damos clic derecho en nuestro video y seleccionamo “Clip Settings”.
+Alli, podemos seleccionar los frames que deseamos analizar iniciando en “Start frame” y finalizando en “End Frame”.</P>
             </div>
         </div>
     </div>
   
     <div class="step tutorial" data-x="0" data-y="-1000">
         <div class="container">
-            <h1>Escogiendo los fotogramas para analizar</h1>
+            <h1>HERRAMIENTA DE CALIBRACION</h1>
             <div class="parrafo">
-                <p>Dar clic derecho sobre la vista principal y luego en clip settings, aparecerá un cuadro de diálogo similar a la figura. En ese cuadro se deben establecer el fotograma inicial y el final, definiendo el rango del video que se desea analizar. En el ejemplo se inicia en el fotograma 5 y se termina en el 25, contando entonces con 20 fotogramas.</p>
+                <p>Tracker necesita una referencia para hacer de sus cálculos, una unidad real para nosotros. Por lo tanto debemos de brindarle al programa una referencia con una distancia conocida.</p>
             </div>
-            <img id="Fgrama" src="image/fotograma.png"  width="700">
+            <img id="Fgrama" src="image/Tools.jpg" width="700">
+            <div class="parrafo">
+                <p>Para ello:
+Nos vamos a la herramienta de Create > New > Calibration Stick.
+Nos aparecerá un objeto parecido a una recta numérica y lo que debemos hacer es colocar ese objeto en nuestra referencia y colocarle su valor</p>
+            </div>
+            <div class="left">
+                <img src="image/Calibration Stick.jpg">
+            </div>
+            <div id="clip">
+                <img src="image/Calibration Tool.jpg">
+            </div>
+
+            <div class="parrafo clear">
+                <h4>FIJAR SISTEMA DE COORDENADAS (PLANO XY)</h4>
+                <p>Tracker ocupa un origen, y la forma de brindárselo es con un sistema de referencia, de esa manera también, le estamos brindando al programa coordenadas para los cálculos de posición, velocidad, etc.</p>
+            </div>
+            <img src="image/Tools1.jpg">
+
+            <div class="parrafo">
+                <p>Seleccionamos la herramienta “Mostrar/Ocultar los ejes de coordenada” para ver nuestro sistema de coordenanas y solo nos restaría moverlo hacia nuestro objeto que deseamos analizar su trayectoria.</p>
+            </div>
         </div>
     </div>
 
 
     <div class="step tutorial" data-x="-2100" data-y="0" data-rotate-y="90">
         <div class="container">
-            <h1>Trazar graficas cinemáticas y analizarlas</h1>
-            <img src="image/ecuacion.png" width="500">
+            <h1>SELECCIÓN DE LA MASA PUNTUAL</h1>
+            <img src="image/Puntual Mass.jpg" width="500">
             <div class="parrafo">
-                <p>En la vista grafica se representan los datos de seguimiento. Si se hace clic en los ejes-x o y, se cambia la variable representada en la gráfica. Al hacer clic derecho sobre la gráfica, se puede acceder a las opciones de análisis. Una de las herramientas más poderosas es Analize, esta muestra la herramienta Data Tool1 como se muestra en la figura 7-5, con estadísticas, ajuste de curvas, y otras capacidades de análisis.</p>
+                <p>Si nuestro objeto a seguir es de masa puntual (masa despreciable), debemos indicarle a tracker la masa puntual de dicho objeto. Para ello:</p>
             </div>
+            <img src="image/Tools3.jpg">
+            <img src="image/Masa Puntual Tool.jpg">
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-2100" data-y="-1000" >
+        <div class="container">
+            <h1>Buscar la Trayectoria de nuestra Masa Puntual</h1>
+            
+            <div class="parrafo">
+                <p>Luego de determinar el área de movimiento de nuestro objeto. Hay que poner a buscar la trayectoria de nuestro objeto a Tracker. Para ello, damos clic en el botón “Search”, esto es un proceso algo lento proporcional al área de movimiento que determinamos.</p>
+                <p>Una vez finalizado, podemos obtener los datos de nuestro objeto (Posicion, Velocidad, Aceleracion, etc) que aparecerán en el panel lateral derecho de nuestro programa. Inicialmente, nos muestra solo el tiempo, posición x y posición y, si queremos agregar mas datos a nuestra table, damos clic en Table y seleccionamos los datos que queremos incluir.</p>
+            </div>
+            <img class="inline" src="image/Table Clic.jpg">
+            <img class="inline" src="image/Table Coumns.jpg">
+            <img class="inline" src="image/Search.jpg" width="200">
         </div>
     </div>
 
