@@ -1,0 +1,399 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.======.\ ' J           
+                         "-.   "__"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..-=  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+
+<!--
+    
+    So you'd like to know how to use impress.js?
+    
+    You've made the first, very important step - you're reading the source code.
+    And that's how impress.js presentations are built - with HTML and CSS code.
+    
+    Believe me, you need quite decent HTML and CSS skills to be able to use impress.js effectively.
+    More importantly, you need to be a designer. There are no default styles or layouts for impress.js presentations.
+    
+    You need to design and build it by hand.
+    
+    So...
+    
+    Would you still like to know how to use impress.js?
+    
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Fisica 1 | Football Tacker</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <!--
+        
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+        
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+        
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+        
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+        
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    
+    <!--<link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />-->
+</head>
+
+<!--
+    
+    Body element is used by impress.js to set some useful class names, that will allow you to detect
+    the support and state of the presentation in CSS or other scripts.
+    
+    First very useful class name is `impress-not-supported`. This class means, that browser doesn't
+    support features required by impress.js, so you should apply some fallback styles in your CSS.
+    It's not necessary to add it manually on this element. If the script detects that browser is not
+    good enough it will add this class, but keeping it in HTML means that users without JavaScript
+    will also get fallback styles.
+    
+    When impress.js script detects that browser supports all required features, this class name will
+    be removed.
+    
+    The class name on body element also depends on currently active presentation step. More details about
+    it can be found later, when `hint` element is being described.
+    
+-->
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+    
+    Now that's the core element used by impress.js.
+    
+    That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+    It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+    
+    You probably won't need it now, but there are some configuration options that can be set on this element.
+    
+    To change the duration of the transition between slides use `data-transition-duration="2000"` giving it
+    a number of ms. It defaults to 1000 (1s).
+    
+    You can also control the perspective with `data-perspective="500"` giving it a number of pixels.
+    It defaults to 1000. You can set it to 0 if you don't want any 3D effects.
+    If you are willing to change this value make sure you understand how CSS perspective works:
+    https://developer.mozilla.org/en/CSS/perspective
+    
+    But as I said, you won't need it for now, so don't worry - there are some simple but interesting things
+    right around the corner of this tag ;)
+    
+-->
+<div id="impress">
+
+    <!--
+        
+        
+        
+    -->
+    <div id="Fisica" class="step">
+        <h1>Proyecto Fisica 1 | Tacker | Football</h1>
+        <hr/>
+        <p>Grabar video para aprender el funcionamiento de la <b>Cinematica</b> usando Tacker</p>
+        <h4>Integrantes:</h4>
+        <div id="integrantes">
+
+            <ul>
+                <li>Sindy C. Palacios</li>
+                <li>Rolando D. Hernandez</li>
+                <li>Luis J. Oseguera</li>
+                <li>Kevin N. Rodriguez</li>
+                <li>Luis C. Isaula</li>
+                <li>Kevin J. Estevez</li>
+            </ul>
+        </div>
+    </div>
+
+    
+        
+        
+        
+    
+    <div class="step slide" data-x="0" data-y="1000">
+        <q>El video que veran a continuación es una demostración de alguien pateando un balón de football para estudiar el comportamiento de la cinemática</q>
+    </div>
+
+    
+    <div class="step" data-x="1000" data-y="0">
+        <div class="container">
+            <video src="video/#" width="850" preload controls/>
+        </div>
+    </div>
+
+    <div class="step" data-x="1000" data-y="400" data-rotate-x="90">
+        <div class="container">
+            <video src="video/ProyectoFisica-2015-09-03_23.11.25.mp4" width="850" preload controls/>
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-1100" data-y="0">
+        <div class="container">
+            <h1>Interfaz de usuario</h1>
+            <div class="parrafo">
+                <p>hay seguimiento a una partícula y los paneles de la interfaz están desplegados para mostrar los tipos de vista disponibles en la aplicación. La vista principal muestra imágenes y videos, incluyendo superposición de elementos tales como posiciones y trayectorias.</p>
+            </div>
+            <img src="image/UI.png" width="450">
+            <div class="parrafo">
+                <div class="left">
+                    <p>La barra de menús permite acceder a la mayoría de los comandos y la configuración del programa. Algunos elementos del menú´ incluyen iconos que muestran los botones de barra de herramientas, estos realizan las mismas acciones.</p>
+                </div>
+                <div class="right">
+                    <p>La barra de herramientas se muestra directamente debajo de la barra de menús, que ofrece un acceso rápido a los controles de uso frecuente, herramientas, ajustes de pista y campos de datos.
+El control de video controla la reproducción y ajustes del clip de video.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="step tutorial" data-x="0" data-y="-1000">
+        <div class="container">
+            <h1>Escogiendo los fotogramas para analizar</h1>
+            <div class="parrafo">
+                <p>Dar clic derecho sobre la vista principal y luego en clip settings, aparecerá un cuadro de diálogo similar a la figura. En ese cuadro se deben establecer el fotograma inicial y el final, definiendo el rango del video que se desea analizar. En el ejemplo se inicia en el fotograma 5 y se termina en el 25, contando entonces con 20 fotogramas.</p>
+            </div>
+            <img id="Fgrama" src="image/fotograma.png"  width="700">
+        </div>
+    </div>
+
+
+    <div class="step tutorial" data-x="-2100" data-y="0" data-rotate-y="90">
+        <div class="container">
+            <h1>Trazar graficas cinemáticas y analizarlas</h1>
+            <img src="image/ecuacion.png" width="500">
+            <div class="parrafo">
+                <p>En la vista grafica se representan los datos de seguimiento. Si se hace clic en los ejes-x o y, se cambia la variable representada en la gráfica. Al hacer clic derecho sobre la gráfica, se puede acceder a las opciones de análisis. Una de las herramientas más poderosas es Analize, esta muestra la herramienta Data Tool1 como se muestra en la figura 7-5, con estadísticas, ajuste de curvas, y otras capacidades de análisis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-2100" data-y="1000" >
+        <div class="container">
+            <img src="image/two-particle.png" width="450">
+            <div class="parrafo">
+                <p>Sistema de dos cuerpos, los modelos de la pista de un sistema de dos partículas dinámicas, que interactúan entre sí a través del radial interno, y las fuerzas tangenciales. La masa del sistema, es la suma de las masas de las partículas, y la posición del sistema es el centro de masa de las partículas.
+Las fuerzas internas son funciones de la distancia r entre las partículas y el ángulo theta, desde la partícula 1 a la partícula 2. Las fuerzas internas actúan en ambas partículas en el sistema, pero, en direcciones opuestas (como lo requiere la tercera ley de Newton). Las fuerzas internas se definen mediante el Model Builder como se muestra en la Figura 4.</p>
+            </div>
+            <br/>
+            <div class="parrafo">
+                <p>Cada una de las partículas en el sistema, también puede experimentar fuerzas externas independientes. Las fuerzas externas también se definen usando el generador de modelos, como se muestra en la Figura 5. Un sistema de dos cuerpos, genera datos de movimiento y vectores como cualquier otra masa puntual. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-2100" data-y="2000" data-rotate-x="90">
+        <div class="container">
+            <div class="parrafo">
+                <p>1. Definición de las partículas en un sistema. 
+Cuando se crea por primera vez un sistema de dos cuerpos, se visualiza un cuadro de diálogo que identifica las partículas en el sistema, y proporciona botones para cambiarlas. El cuadro de diálogo se puede recuperar en cualquier momento seleccionando Seleccionar Partículas,... desde el menú de la pista del sistema.</p>
+                <br/>
+                <img src="image/definicion_particulas.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-1100" data-y="2000" data-rotate-y="90">
+        <div class="container">
+            <div class="parrafo">
+                <p>Un nuevo sistema, es inicialmente vacío. Para añadir una partícula en el sistema, haga clic en el botón, y crear un nuevo modelo de partículas.</p>
+                <br/>
+                <img src="image/two-particle-2.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-3100" data-y="2000" data-rotate-y="90">
+        <div class="container">
+            <div class="hide">
+                <div class="parrafo">
+                    <p>Repita lo anterior para agregar una segunda partícula. También puede reemplazar, una partícula del sistema, con otra partícula nueva o existente como se muestra en la Figura</p>
+                    <br/>
+                    <img src="image/two-particle-3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="step tutorial" data-x="-3100" data-y="1000" data-rotate-y="90">
+        <div class="container">
+            <div class="parrafo">
+                <p>Definición de las fuerzas internas de un sistema Las fuerzas internas, y otras propiedades de un sistema de dos cuerpos, se muestran y editan con la función Model Builder.
+Seleccione el sistema de dos cuerpos, de la lista desplegable Model Builder para mostrar sus propiedades. Tenga en cuenta que las masas de las partículas del sistema están incluidos en la lista de parámetros, para que estén disponibles para su uso en las expresiones de fuerza. Las masas y las posiciones y velocidades relativas iniciales no son editables ya que están determinadas por las propias partículas.</p>
+                <br/>
+                <img src="image/two-particle-4.png" width="670">
+            </div>
+        </div>
+    </div>
+    
+    <div id="overview" class="step" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    
+    
+    
+-->
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
+
+<!--
+    
+    Now you know more or less everything you need to build your first impress.js presentation, but before
+    you start...
+    
+    Oh, you've already cloned the code from GitHub?
+    
+    You have it open in text editor?
+    
+    Stop right there!
+    
+    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
+    first needs to grow in your mind.
+    
+    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
+    
+    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
+    to present. It will get you closer and closer to the layout you'll build later with impress.js.
+    
+    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
+    it earlier, because you'll only waste your time fighting with positioning of useless points.
+    
+    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
+    creating awesome and engaging presentations.
+    
+    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
+    
+-->
+
+<!--
+    
+    Are you still reading this?
+    
+    For real?
+    
+    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
+    to congratulate you personally :)
+    
+    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
+    or anything you like to drink. And raise a glass for me ;)
+    
+    Cheers!
+    
+-->
+
